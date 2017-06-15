@@ -1,0 +1,31 @@
+<ion-view  view-title="Edit Profile">
+	<ion-content class="padding">
+		<form ng-submit="doConfirmEdit()" ng-controller="ShowCtrl">
+			<div class="list card">
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">Date of Birth</span>
+			    <input ng-model="editData.dob" type="date" placeholder="Your date of birth" ng-repeat="x in showProfile" value="{{x.dob}}">
+			  </label>
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">Place of Birth</span>
+			    <input ng-model="editData.pob" type="text" placeholder="The place where you were born" ng-repeat="x in showProfile" value="{{x.pob}}">
+			  </label>
+			  <label class="item item-input item-floating-label" ng-repeat="x in showProfile">
+			    <span class="input-label">Mailing Address</span>
+			    <input ng-model="editData.mailingaddress" type="text" placeholder="Your Mailing Address" value="{{x.mailing_addr}}">
+			  </label>
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">E-mail Address</span>
+			    <input ng-model="editData.email" type="email" placeholder="Your Email Adress" ng-repeat="x in showProfile">
+			  </label>
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">Mobile Number</span>
+			    <input ng-model="editData.mobilenumber" type="number" placeholder="Mobile Number" ng-repeat="x in showProfile">
+			  </label>
+			  <label class="item">
+			  	<button class="button button-assertive button-block" type="submit">Save</button>
+			  </label>
+			</div>
+		</form>
+	</ion-content>
+</ion-view>

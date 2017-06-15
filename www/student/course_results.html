@@ -1,0 +1,121 @@
+<ion-view view-title="Course Results">
+	<ion-content class="padding">
+		<ion-list ng-controller="ResultsCtrl">
+			<h4>Academic General Results Summary:</h4>
+			
+			<h4>First Year</h4>
+			<div class="card">
+				<h4 class="item">Semester I</h4>
+				<div class="row item">
+					<div class="col col-20">Code</div>
+					<div class="col col-10">CA</div>
+					<div class="col col-10">UE</div>
+					<div class="col col-20">Final</div>
+					<div class="col col-20">Grade</div>
+					<div class="col col-20">Status</div>
+				</div>
+				<div class="row item" ng-repeat="x in showResult">
+				  <div class="col col-20"><p>{{x.course}}</p></div>
+				  <div class="col col-10"><p>{{x.cw}}</p></div>
+				  <div class="col col-10"><p>{{x.ue}}</p></div>
+				  <div class="col col-20"><p>{{x.final}}</p></div>
+				  <div class="col col-20"><p>{{x.grade}}</p></div>
+				  <div class="col col-20"><p>{{x.status}}</p></div>
+				</div>
+				<h4 class="item">Semester II</h4>
+				<div class="row item">
+					<div class="col col-20">Code</div>
+					<div class="col col-10">CA</div>
+					<div class="col col-10">UE</div>
+					<div class="col col-20">Final</div>
+					<div class="col col-20">Grade</div>
+					<div class="col col-20">Status</div>
+				</div>
+				<div class="row item" ng-repeat="x in showResult2">
+				  <div class="col col-20"><p>{{x.course}}</p></div>
+				  <div class="col col-10"><p>{{x.cw}}</p></div>
+				  <div class="col col-10"><p>{{x.ue}}</p></div>
+				  <div class="col col-20"><p>{{x.final}}</p></div>
+				  <div class="col col-20"><p>{{x.grade}}</p></div>
+				  <div class="col col-20"><p>{{x.status}}</p></div>
+				</div>
+			</div>
+			<hr>
+			<h4>Second Year</h4>
+			<div class="card">
+				<h4 class="item">Semester I</h4>
+				<div class="row item">
+					<div class="col col-20">Code</div>
+					<div class="col col-10">CA</div>
+					<div class="col col-10">UE</div>
+					<div class="col col-20">Final</div>
+					<div class="col col-20">Grade</div>
+					<div class="col col-20">Status</div>
+				</div>
+				<div class="row item" ng-repeat="x in showResult3">
+				  <div class="col col-20"><p>{{x.course}}</p></div>
+				  <div class="col col-10"><p>{{x.cw}}</p></div>
+				  <div class="col col-10"><p>{{x.ue}}</p></div>
+				  <div class="col col-20"><p>{{x.final}}</p></div>
+				  <div class="col col-20"><p>{{x.grade}}</p></div>
+				  <div class="col col-20"><p>{{x.status}}</p></div>
+				</div>
+				<h4 class="item">Semester II</h4>
+				<div class="row item">
+					<div class="col col-20">Code</div>
+					<div class="col col-10">CA</div>
+					<div class="col col-10">UE</div>
+					<div class="col col-20">Final</div>
+					<div class="col col-20">Grade</div>
+					<div class="col col-20">Status</div>
+				</div>
+				<div class="row item" ng-repeat="x in showResult4">
+				  <div class="col col-20"><p>{{x.course}}</p></div>
+				  <div class="col col-10"><p>{{x.cw}}</p></div>
+				  <div class="col col-10"><p>{{x.ue}}</p></div>
+				  <div class="col col-20"><p>{{x.final}}</p></div>
+				  <div class="col col-20"><p>{{x.grade}}</p></div>
+				  <div class="col col-20"><p>{{x.status}}</p></div>
+				</div>
+			</div>
+			<hr>
+			<h4>Third Year</h4>
+			<div class="card">
+				<h4 class="item">Semester I</h4>
+				<div class="row item">
+					<div class="col col-20">Code</div>
+					<div class="col col-10">CA</div>
+					<div class="col col-10">UE</div>
+					<div class="col col-20">Final</div>
+					<div class="col col-20">Grade</div>
+					<div class="col col-20">Status</div>
+				</div>
+				<div class="row item" ng-repeat="x in showResult5">
+				  <div class="col col-20"><p>{{x.course}}</p></div>
+				  <div class="col col-10"><p>{{x.cw}}</p></div>
+				  <div class="col col-10"><p>{{x.ue}}</p></div>
+				  <div class="col col-20"><p>{{x.final}}</p></div>
+				  <div class="col col-20"><p>{{x.grade}}</p></div>
+				  <div class="col col-20"><p>{{x.status}}</p></div>
+				</div>
+				<h4 class="item">Semester II</h4>
+				<div class="row item">
+					<div class="col col-20">Code</div>
+					<div class="col col-10">CA</div>
+					<div class="col col-10">UE</div>
+					<div class="col col-20">Final</div>
+					<div class="col col-20">Grade</div>
+					<div class="col col-20">Status</div>
+				</div>
+				<div class="row item" ng-repeat="x in showResult6">
+				  <div class="col col-20"><p>{{x.course}}</p></div>
+				  <div class="col col-10"><p>{{x.cw}}</p></div>
+				  <div class="col col-10"><p>{{x.ue}}</p></div>
+				  <div class="col col-20"><p>{{x.final}}</p></div>
+				  <div class="col col-20"><p>{{x.grade}}</p></div>
+				  <div class="col col-20"><p>{{x.status}}</p></div>
+				</div>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>

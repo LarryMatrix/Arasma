@@ -1,0 +1,22 @@
+<ion-view view-title="Appeal">
+	<ion-content class="padding">
+		<h4>Finish Appealing</h4>
+			<form ng-submit="doConfirmAppeal()" ng-controller="SuppCtrl">
+				<div class="list card">
+				  <label class="item item-input item-floating-label">
+				    <span class="input-label">Appealing Subjects:</span>
+				    <textarea ng-model="appData.subjects" type="text" placeholder="Subjects for Appeal. Separate with commas. example: ICT100, BUS100" rows="8">
+				    </textarea>
+				  </label>
+				  <label class="item item-input item-floating-label">
+				    <span class="input-label">Reason for Appeal:</span>
+				    <textarea ng-model="appData.reason" type="text" placeholder="Write your reason here" rows="8">
+				    </textarea>
+				  </label>
+				  <label class="item">
+				  	<button class="button button-assertive button-block" type="submit">Appeal</button>
+				  </label>
+				</div>
+			</form>
+	</ion-content>
+</ion-view>

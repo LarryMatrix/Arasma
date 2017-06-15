@@ -1,0 +1,17 @@
+<ion-view view-title="Supplementary">
+	<ion-content class="padding">
+		<h4>Finish Application</h4>
+			<form ng-submit="doConfirm()" ng-controller="SuppCtrl">
+				<div class="list card">
+				  <label class="item item-input item-floating-label">
+				    <span class="input-label">Supplementary Subjects:</span>
+				    <textarea ng-model="suppData.subjects" type="text" placeholder="Supplementary Subjects. Separate with commas. example: ICT100, BUS100" rows="8">
+				    </textarea>
+				  </label>
+				  <label class="item">
+				  	<button class="button button-assertive button-block" type="submit">Apply</button>
+				  </label>
+				</div>
+			</form>
+	</ion-content>
+</ion-view>

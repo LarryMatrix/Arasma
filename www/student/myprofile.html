@@ -1,0 +1,55 @@
+<ion-view view-title="My Profile">
+	<ion-content class="padding">
+		<ion-list ng-controller="ShowCtrl">
+			<h4 ng-repeat="x in showProfile">Here's your Profile Particulars.</h4>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Sur Name:
+				<p style=" font-style: italic;">{{x.lname}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				First Name:
+				<p style=" font-style: italic;">{{x.fname}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Middle Name:
+				<p style=" font-style: italic;">{{x.mname}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Gender:
+				<p style=" font-style: italic;">{{x.gender}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Program of Study:
+				<p style=" font-style: italic;">{{x.program}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Date of Birth:
+				<p style=" font-style: italic;">{{x.dob}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Place of Birth:
+				<p style=" font-style: italic;">{{x.pob}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Mailing Address:
+				<p style=" font-style: italic;">{{x.mailing_addr}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Mobile Number:
+				<p style=" font-style: italic;">{{x.mobile_no}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Email Address:<br>
+				<a style=" font-style: italic;" href="mailto:{{x.email}}">{{x.email}}</a>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Marital Status:
+				<p style=" font-style: italic;">{{x.marital_status}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProfile">
+				Sponsorship Type:
+				<p style=" font-style: italic;">{{x.sponsor}}</p>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

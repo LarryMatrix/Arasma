@@ -1,0 +1,14 @@
+<ion-view ng-controller="ShowCtrl" view-title="Dashboard">
+	<ion-content class="padding" ng-repeat="x in showProfile">
+		<h4>You are welcome<br/>{{x.fname}} {{x.mname}} {{x.lname}} ({{x.stud_id}})</h4>
+		<p>|<i class="icon ion-arrow-right-a"></i> Swipe from the Left pane or tap the three horizontal lines at the top left to view this App options</p>
+		<ion-list>
+			<li>My Profile</li>
+			<li>Course Results</li>
+			<li>Request Transcript</li>
+			<li>Appeal Results</li>
+			<li>Apply for supplementary</li>
+			<li>Change Password</li>
+		</ion-list>
+	</ion-content>
+</ion-view>

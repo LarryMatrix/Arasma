@@ -1,0 +1,28 @@
+<ion-view view-title="Appeal">
+	<ion-content class="padding">
+		<h4>Apply for Appeal</h4>
+			<form ng-submit="doAppeal()" ng-controller="SuppCtrl">
+				<div class="list card">
+				  <label class="item item-input item-floating-label">
+				    <span class="input-label">Transaction ID:</span>
+				    <input ng-model="appData.transactionID" type="number" placeholder="Your Transaction ID from the Payin Slip" >
+				  </label>
+				  <label class="item item-input item-floating-label">
+				    <span class="input-label">Ammount Paid:</span>
+				    <input ng-model="appData.ammount" type="number" placeholder="Ammount You've Paid" >
+				  </label>
+				  <label class="item item-input item-floating-label">
+				    <span class="input-label">Transaction Date:</span>
+				    <input ng-model="appData.transDate" type="date" placeholder="Date of Transaction" >
+				  </label>
+				  <label class="item item-input item-floating-label">
+				    <span class="input-label">Payment Branch:</span>
+				    <input ng-model="appData.branch" type="text" placeholder="Branch name where you performed payment" >
+				  </label>
+				  <label class="item">
+				  	<button class="button button-assertive button-block" type="submit">Next</button>
+				  </label>
+				</div>
+			</form>
+	</ion-content>
+</ion-view>

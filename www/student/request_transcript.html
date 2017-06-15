@@ -1,0 +1,10 @@
+<ion-view view-title="Request Transcript" ng-controller="TranscriptCtrl">
+	<ion-content class="padding" >
+		<ion-list >
+			<h4 align="center">Press the Request Transcript Button for your request to be valid</h4>
+			Please update your personal particulars, using the procedure below
+			<li>Make sure your profile is updated fully so to see the Request button.</li>
+			<button ng-repeat="x in showTranscript" class="button button-block button-assertive" ng-click="doRequest()" ng-repeat="x in showTranscript">Request Transcript</button>
+		</ion-list>
+	</ion-content>
+</ion-view>

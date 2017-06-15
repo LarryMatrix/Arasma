@@ -1,0 +1,32 @@
+<ion-view hide-nav-bar="true">
+	<ion-header-bar class="bar-clear" ng-controller="SideCtrl"></ion-header-bar>
+	<ion-content class="padding" style="background-color: #fff3e0;">
+		<div class="title" align="center">
+			<img style="margin-top: 10%;" src="../img/arasma-logo.png" height="100" width="auto">
+			<p>Arasma | Login</p>
+		</div>
+		<form ng-submit="doLogin()" ng-controller="AppCtrl">
+			<div class="list card">
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">Username</span>
+			    <input ng-model="loginData.username" type="text" placeholder="Your Username" >
+			  </label>
+			  <label class="item item-input item-floating-label">
+			    <span class="input-label">Password</span>
+			    <input ng-model="loginData.password" type="password" placeholder="Your Password">
+			  </label>
+			  <label class="item">
+			  	<button class="button button-assertive button-block" type="submit" >Login</button>
+			  </label>
+			</div>
+			<div class="padding"></div>
+			<center>
+				<p style="font-size: 12px;">Developed by Lawrance Massanja<br>
+					<div ng-controller="SideCtrl">
+	    				&copy; {{date | date:'yyyy'}}
+	  				</div>
+	  			</p>
+  			</center>
+		</form>
+	</ion-content>
+</ion-view>

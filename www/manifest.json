@@ -1,0 +1,14 @@
+{
+  "name": "Academic Result Appeal and Supplimentary Mobile Application",
+  "short_name": "Arasma",
+  "start_url": "index.html",
+  "orientation": "Portrait",
+  "background_color": "white",
+  "theme_color": "darkorange",
+  "display": "Standalone",
+  "icons": [{
+    "src": "https://preview.ibb.co/mq3Lvv/arasma-logo22.png",
+    "sizes": "350x350",
+    "type": "image/png"
+  }]
+}

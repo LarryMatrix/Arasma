@@ -1,0 +1,25 @@
+<ion-view view-title="Course Registration">
+	<ion-content class="padding">
+		<ion-list ng-controller="RegistrationCtrl">
+			<h4>Degree Program Information</h4>
+			<ion-item class="item" ng-repeat="x in showProg">
+				Programme Name:
+				<p style=" font-style: italic;">{{x.programName}}</p>
+			</ion-item>
+			<ion-item class="item" ng-repeat="x in showProg">
+				Year of Study:
+				<p style=" font-style: italic;">{{x.yos}}</p>
+			</ion-item>
+			<h4>Core Courses Information</h4>
+			<div class="row item" ng-repeat="x in showCore">
+			  <div class="col">{{x.coreCourse}}</div>
+			  <div class="col"><p style=" font-style: italic;">{{x.coreName}}</p></div>
+			</div>
+			<h4>Option Courses Information</h4>
+			<div class="row item" ng-repeat="x in showOption">
+			  <div class="col">{{x.optionCourse}}</div>
+			  <div class="col"><p style=" font-style: italic;">{{x.optionName}}</p></div>
+			</div>
+		</ion-list>
+	</ion-content>
+</ion-view>
